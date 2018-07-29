@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="DigitalWhiteboard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DigitalWhiteboard"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical" Width="200" Padding="20,20,20,20" Loaded="AgendaStackPanel_AgendaViewLoaded">
+            <Button x:Name="ConnectButton">Connect</Button>
+            <TextBlock FontWeight="Bold" FontSize="20">
+                Agenda
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Padding="20,20,20,20" Width="500" Loaded="NotesStackPanel_NotesViewLoaded">
+            
+        </StackPanel>
+    </StackPanel>    
+
+</Page>
